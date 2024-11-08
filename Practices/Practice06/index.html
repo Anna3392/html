@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Формы</title>
+</head>
+<body>
+	<form name="email" action="mailto:milka-pups@mail.ru" enctype="text/plain" method="post">
+        <fieldset>
+            <legend>Многострочные текстовые поля</legend>
+            <textarea name="message" cols="81" rows="5">    Вне зависимости от того, о чем вы мечтаете — начинайте над этим работать! 
+    И тогда в вашей жизни начнут происходить самые настоящие чудеса!
+            </textarea><br><br>
+            <label for="message">Введите текст</label>
+            <input type="message" id="message" name="message">
+            <button type="submit">Отправить</button>
+        </fieldset>
+        <fieldset>
+            <legend>Выпадающие списки</legend> 
+            <p><strong>Жизненные ценнсоти</strong></p>
+            <select id="life" name="life" size=16 multiple>
+                <option selected value="l">Выберите пункт</option>
+                <option value="l1">Дети</option>
+                <option  value="l2">Семья</option>
+                <option value="l3">Свой дом</option>
+                <option value="l4">Взаимопонимание</option>
+                <option value="l5">Успех</option>
+                <option value="l6">Карьера</option>
+                <option value="l7">Статус</option>
+                <option value="l8">Хороший заработок</option>
+                <option value="l9">Навыки общения</option>
+                <option value="l10">Спорт</option>
+                <option value="l11">Беспрерывное самообразование</option>
+                <option value="l12">Чтение книг</option>
+                <option value="l13">Встречи с друзьями</option>
+                <option value="l14">Прогулки</option>
+                <option value="l15">Полноценный сон</option>
+                <option value="l16">Путешествия</option>
+            </select><br><br>
+            <p><strong>Черты характера</strong></p>
+            <select id="skill" name="skill" size=15 multiple>
+                <option selected value="s">Выберите пункт</option>
+                <option value="s1">Честность</option>
+                <option value="s2">Правдивость</option>
+                <option value="s3">Любезность</option>
+                <option value="s4">Мужество</option>
+                <option value="s5">Уважение к другим</option>
+                <option value="s6">Искренность</option>
+                <option value="s7">Справедливость</option>
+                <option value="s8">Бескорыстие</option>
+                <option value="s9">Доброта</option>
+                <option value="s10">Сдержанность</option>
+                <option value="s11">Бережливость</option>
+                <option value="s12">Скромность</option>
+                <option  value="s13">Мудрость</option>
+                <option value="s14">Общительность</option>
+            </select><br><br>
+            <button type="submit">Отправить</button> 
+        </fieldset>
+    </form>
+</body>
+</html>

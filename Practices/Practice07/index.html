@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Input</title>
+    </head>
+    <body>
+        <form action="/submit" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Регистрационная форма пользователя</legend>
+                <label>Имя:
+                    <input type="text" name="name" required>
+                </label><br><br>
+                <label>Укажите возраст:
+                    <input type="number" name="age" required>
+                </label><br><br>
+                <label>Укажите пол:</label>
+                <label>мужской
+                    <input type="radio" name="gender" value="male" required>
+                </label> 
+                <label>женский 
+                    <input type="radio" name="gender" value="female" required>
+                </label><br><br>
+                <label>Страна проживания: 
+                    <select name="country">
+                        <option value="by">Беларусь</option>
+                        <option value="ru">Российская Федерация</option>
+                        <option value="another">Другое государство</option>
+                    </select>
+                </label><br><br>
+                <label>Владение языками:</label>
+                <label>русский
+                    <input type="checkbox" name="languages" value="russian">
+                </label>
+                <label>белорусский
+                    <input type="checkbox" name="languages" value="belarusian">
+                </label>
+                <label>английский 
+                    <input type="checkbox" name="languages" value="english">
+                </label><br><br>
+                <label>Фото профиля:
+                    <input type="file" name="profilePhoto" accept="image/*">
+                </label><br><br>
+                <label>Введите логин:
+                    <input type="text" name="login" maxlength="15" required>
+                </label><br><br>
+                <label>Ведите пароль:
+                    <input type="password" name="pas" minlength="4" maxlength="8" required>
+                </label><br><br>
+                <label>Повторите пароль:
+                    <input type="password" name="confirmPas" minlength="4" maxlength="8" required>
+                </label><br>
+            </fieldset><br>
+            <input type="reset" value="Сброс"> <input type="submit" disabled><br><br>
+            <fieldset>
+                <legend>Регистрационная форма пользователя</legend>
+                <label>Имя:
+                    <input type="text" name="name" required>
+                </label><br><br>
+                <label>Укажите возраст:
+                    <input type="text" list="age" name="age" required></label>
+                    <datalist id="age">
+                        <option value="10-15 лет">
+                        <option value="15-20 лет">
+                        <option value="20-30 лет">
+                        <option value="30-40 лет">
+                        <option value="старше 40 лет">
+                    </datalist><br><br><br>
+                    <label>Укажите пол:</label>
+                    <label>мужской
+                        <input type="radio" name="gender" value="male" required>
+                    </label> 
+                    <label>женский 
+                        <input type="radio" name="gender" value="female" required>
+                    </label><br><br>
+                    <label>Страна проживания: 
+                        <select name="country">
+                            <option value="by">Беларусь</option>
+                            <option value="ru">Российская Федерация</option>
+                            <option value="another">Другое государство</option>
+                        </select>
+                    </label><br><br>
+                    <label>Владение языками:</label>
+                    <label>русский
+                        <input type="checkbox" name="languages" value="russian">
+                    </label>
+                    <label>белорусский
+                        <input type="checkbox" name="languages" value="belarusian">
+                    </label>
+                    <label>английский 
+                        <input type="checkbox" name="languages" value="english">
+                    </label><br><br>
+                    <label>Фото профиля
+                        <input type="file" name="photo" accept="image/*">
+                    </label><br><br>
+                    <label>Введите логин:
+                        <input type="text" name="login" maxlength="15" required>
+                    </label><br><br>
+                    <label>Введите пароль:
+                        <input type="password" name="pas" minlength="4" maxlength="8" required>
+                    </label><br><br>
+                    <label>Повторите пароль:
+                        <input type="password" name="confirmPas" minlength="4" maxlength="8" required>
+                    </label><br><br>
+            </fieldset><br>
+                <input type="reset" value="Сброс"> <input type="submit" disabled>
+        </form>
+        <form action="/submit" method="post" autocomplete="off">
+            <p><strong>Запись на курсы</strong></p>
+            <hr><br>
+            <label>Имя: <input type="text" name="name" value="Алексей" maxlength="12"></label><br><br>
+            <label>Язык программирования:</label><br>
+            <label> <input type="radio" name="program-lang" value="C++"> C++</label><br>
+            <label> <input type="radio" name="program-lang" value="PHP"> PHP</label><br>
+            <label> <input type="radio" name="program-lang" value="Python"> Python</label><br>
+            <label for="additionalInfo">Дополнительная информация:</label><br>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="28" placeholder="Есть опыт программирования на С++" required></textarea><br> 
+            <label>Секретное слово:<br><input type="password" name="secretWord" required></label><br><br>
+            <input type="submit" value="Отправить" disabled>
+            <input type="reset" value="Очистить">
+        </form><br>
+        <form action="/submit" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Параметры автомобиля</legend>
+                <label>Марка автомобиля <input type="text" name="carMake"></label><br><br>
+                <label>Объем двигателя, <abbr title="сантиметры">см</abbr><sup>3</sup> 
+                    <input type="number" name="enginecapacity" placeholder="1900">
+                </label><br><br>
+                <label>Область:
+                    <select name="region">
+                        <option value="r1">Брестская</option>
+                        <option value="r2">Витебская</option>
+                        <option value="r3">Гомельская</option>
+                        <option value="r4">Гродненская</option>
+                        <option value="r5">Минская</option>
+                        <option value="r6">Могилевская</option>        
+                    </select>
+                </label><br><br>
+                <label>Тип КПП</label><br>
+                <input type="radio" id="avtomatic" name="type" value="avtomatic" required>
+                <label for="avtomatic">Автомат</label><br>
+                <input type="radio" id="mechanics" name="type" value="mechanics">
+                <label for="mechanics">Механика</label><br><br>
+                <label>Двигатель</label><br>
+                <input type="checkbox" id="electro" name="engine" value="electro" required>
+                <label for="electro">Электро</label><br>
+                <input type="checkbox" id="diesel" name="engine" value="diesel">
+                <label for="diesel">Дизель</label><br>
+                <input type="checkbox" id="petrol" name="engine" value="petrol">
+                <label for="petrol">Бензин</label><br>
+                <input type="checkbox" id="propane-butane" name="engine" value="propane-butane">
+                <label for="propane-butane">Пропан-бутан</label><br>
+                <input type="checkbox" id="methane" name="engine" value="methane">
+                <label for="methane">Метан</label><br><br>
+                <label for="description">Описание</label><br><br>
+                <textarea id="description" name="description" rows="7" cols="51" required></textarea><br><br>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </fieldset>
+        </form>
+    </body>
+</html>

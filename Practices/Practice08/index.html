@@ -11,17 +11,17 @@
     <caption><b>АНКЕТА</b></caption>
     <form id="form_table" name="form_table" action="/submit" method="post" autocomplete="off">
     <tr>
-        <td>Фамилия</td>
+        <td><label for="surname">Фамилия</label></td>
         <td>
             <input type="text" id="surname" name="surname">
         </td>
     </tr>
     <tr>
-        <td>Имя</td>
+        <td><label for="name">Имя</label></td>
         <td><input type="text" id="name" name="name"></td>
     </tr>
     <tr>
-        <td>Отчество</td>
+        <td><label for="middle_name">Отчество</label></td>
         <td>
             <input type="text" id="middle_name" name="middle_name">
         </td>
@@ -30,7 +30,7 @@
         <td colspan="2">О себе сообщаю сведения:</td>
     </tr>
     <tr>
-        <td>Пол</td>
+        <td><label>Пол</label></td>
         <td>
             <input type="radio" id="male" name="sex" value="1">
             <label for="male" name="male">Мужской</label><br>
@@ -39,30 +39,30 @@
         </td>
     </tr>
     <tr>
-        <td>Дата рождения</td>
+        <td><label for="date_of_birth">Дата рождения</label></td>
         <td>
             <input type="date" id="date_of_birth" name="date_of_birth">
         </td>
     </tr>
     <tr>
-        <td>Количество полных лет</td>
+        <td><label for="age">Количество полных лет</label></td>
         <td><input type="number" id="age" name="age" min="18" max="63" placeholder="18" ></td>
     </tr>
     <tr>
-        <td>Адрес места жительства (пребывания)</td>
+        <td><label for="address">Адрес места жительства (пребывания)</label></td>
         <td><input type="text" id="address" name="address"></td>
     </tr>
     <tr>
-        <td>Номер контактного телефона</td>
+        <td><label>Номер контактного телефона</label></td>
         <td><label for="phone_numbe">+375</label>
             <input type="tel" id="phone_numbe" name="phone_numbe"></td>
     </tr>
     <tr>
-        <td>Контактный e-mail</td>
+        <td><label for="email">Контактный e-mail</label></td>
         <td><input type="email" id="emall" name="emall"></td>
     </tr>
     <tr>
-        <td></td>
+        <td><label>Образование</label></td>
         <td><input type="radio" id="secondary_education" name="education" value="=1">
             <label for="secondary_education">-основное общее среднее профессиональное;</label><br>
             <input type="radio" id="higher_education" name="education" value="2">
@@ -74,11 +74,11 @@
         </td>    
     </tr>
     <tr>
-        <td>Профессия (специальность)</td>
+        <td><label for="profession">Профессия (специальность)</label></td>
         <td><input type="text" id="profession" name="profession"></td>
     </tr>
     <tr>
-        <td>Стаж работы по специальности</td>
+        <td><label for="experience">Стаж работы по специальности</label></td>
         <td>
             <select id="experience" name="experience">
                 <option value="1">Менее одного года</option>
@@ -90,11 +90,11 @@
         </td>
     </tr>
     <tr>
-        <td>Предыдущее место работы</td>
+        <td><label for="prior_work">Предыдущее место работы</label></td>
         <td><input type="text" id="prior_work" name="prior_work"></td>
     </tr>
     <tr>
-        <td>Период работы на предыдущем месте</td>
+        <td><label>Период работы на предыдущем месте</label></td>
         <td><label for="data1">c</label>
             <input type="date" id="data1" name="data1">
             <label for="data2">по</label>
@@ -109,7 +109,5 @@
     </tr>
     </form>
    </table> 
-
-
 </body>
 </html>
